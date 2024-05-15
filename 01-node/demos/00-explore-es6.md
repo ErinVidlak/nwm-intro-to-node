@@ -63,7 +63,8 @@ ES6 modules use `import` and `export` statements to enable modular programming. 
 ### Example:
 ```javascript
 // In file: lib.js
-export const port = 3000
+const port = 3000
+module.exports = { port }
 
 // In another file
 import { port } from './lib'
